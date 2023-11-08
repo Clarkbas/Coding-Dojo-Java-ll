@@ -1,0 +1,11 @@
+1691768619708	Rename type 'UserController'
+1691772107815	Rename type 'UserService'
+1691779321646	Rename type 'Event'
+1691779336904	Encapsulate field 'rating'
+1691779685716	Rename type 'UserEvent'
+1691783724571	Rename type 'Show'
+1691783756325	Rename type 'ShowRating'
+1691787220802	Delete element
+1691787900258	Delete element
+1691787947648	Rename package 'com.example.coding.test.models'
+1691788046468	Rename package 'com.example.coding.ensayo.models'

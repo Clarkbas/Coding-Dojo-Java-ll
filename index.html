@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+        body {
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffc107;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 665px;
+        }
+
+        .score {
+            margin-bottom: 10px;
+        }
+
+        .place {
+            border: 1px solid #343a40;
+            border-radius: 3px;
+            padding: 5px 25px 5px 5px;
+            margin: 5px;
+            text-align: center;
+            position: absolute;
+            top: 170px;
+            left: 15.5px;
+        }
+        
+        .place1 {
+            border: 1px solid #343a40;
+            border-radius: 3px;
+            padding: 5px 25px 5px 5px;
+            margin: 5px;
+            text-align: center;
+            position: absolute;
+            top: 170px;
+            left: 160px;
+        }
+        
+        .place2 {
+            border: 1px solid #343a40;
+            border-radius: 3px;
+            padding: 5px 25px 5px 5px;
+            margin: 5px 10px 10px 10px;
+            text-align: center;
+            position: absolute;
+            top: 170px;
+            left: 293.5px;
+        }
+        
+        .place3 {
+            border: 1px solid #343a40;
+            border-radius: 3px;
+            padding: 5px 25px 5px 5px;
+            margin: 5px 10px 10px 10px;
+            text-align: center;
+            position: absolute;
+            top: 170px;
+            left: 420px;
+        }
+        
+        .place4 {
+            border: 1px solid #343a40;
+            border-radius: 3px;
+            padding: 5px 25px 5px 5px;
+            margin: 5px 10px 10px 10px;
+            text-align: center;
+            position: absolute;
+            top: 170px;
+            left: 570px;
+        }
+
+        .activities {
+            border: 1px solid #343a40;
+            position: absolute;
+            top: 320px;
+            left: 100px;
+            width: 600px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+        u {
+            border: 1px solid #343a40;
+            position: absolute;
+            top: 320px;
+            left: 10px;
+        }
+        .boton {
+            border: 1px solid #343a40;
+            position: absolute;
+            top: 400px;
+            left: 330px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="jumbotron">
+            <h1>Ninja Gold!</h1>
+        </div>
+        <div class="score">
+            <h4>Your Gold: <span>${gold}</span></h4>
+        </div>
+
+        <div>
+            <div class="place">
+                <h4>Farm</h4>
+                <p>Earn 10-20 gold</p>
+                <form action="/farm" method="post">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="place1">
+                <h4>Cave</h4>
+                <p>Earn 5-10 gold</p>
+                <form action="/cave" method="post">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="place2">
+                <h4>House</h4>
+                <p>Earn 2-5 gold</p>
+                <form action="/house" method="post">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="place3">
+                <h4>Casino</h4>
+                <p>Earn/Lose 0-50 gold</p>
+                <form action="/casino" method="post">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="place4">
+                <h4>Spa</h4>
+                <p>Earn/Lose 0-50 gold</p>
+                <form action="/spa" method="post">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <h5><u>Activities:</u></h5>
+            <div class="activities">
+                <c:forEach var="activity" items="${activities}">
+                    <p>${activity}</p>
+                </c:forEach>
+            </div>
+        </div>
+
+        <div class="footer">
+            <form action="reset" method="post">
+                <input class="boton" type="submit" value="Start New Game">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Estilos para el título */
+h1 {
+  font-family: 'Balsamiq Sans', cursive;
+  text-align: center;
+}
+
+/* Estilos para el select */
+select {
+  width: 50%; 
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 400px; /* Ajusta el ancho del formulario a tu preferencia */
+  margin: 0 auto; /* Centra horizontalmente el formulario */
+  display: flex; /* Utiliza flexbox para colocar elementos en línea */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no caben en una sola */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: center; /* Alinea los elementos horizontalmente al centro */
+}
+/* Estilos específicos para el label "Edad" */
+label[for="name"] {
+  margin-right: 75px; /* Ajusta este valor para separar el label "Edad" */
+}
+/* Estilos específicos para el botón */
+button {
+  width: 45%;
+  margin-left: 0px; /* Mueve el botón a la derecha */
+}

@@ -1,0 +1,43 @@
+/* Archivo style.css */
+h1 {
+  color: blue;
+}
+
+#error-message {
+  color: red;
+}
+.letraRoja{
+	position: absolute;
+	left: 560px;
+	top: 190px;
+}
+.Pregunta{
+	position: absolute;
+	left: 610px;
+	top: 250px;
+	
+}
+.escritura{
+	position: absolute;
+	left: 600px;
+	top: 280px;
+	
+}
+.Boton{
+	position: absolute;
+	left: 650px;
+	top: 310px;
+	font-family: 'Balsamiq Sans', cursive;
+	
+}
+
+ul{
+	position: absolute;
+	left: 600px;
+	top: 250px;
+	
+}
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');

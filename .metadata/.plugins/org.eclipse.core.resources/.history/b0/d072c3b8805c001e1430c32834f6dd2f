@@ -1,0 +1,32 @@
+package com.oracle.java;
+
+public class Customer {
+	
+	private String name;
+	String name2;
+	private String size;
+	
+	private Clothing items; 
+	
+	
+	
+	public Customer(String name, int measurement) {
+		this.name = name;
+		setSize(measurement);
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSize() {
+		return size;
+	}
+	public void setSize(String string) {
+		this.size = string;
+	}
+
+}

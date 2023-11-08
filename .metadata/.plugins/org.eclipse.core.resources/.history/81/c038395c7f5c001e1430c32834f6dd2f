@@ -1,0 +1,9 @@
+package com.oracle.java;
+
+public class Customer {
+	
+	String name;
+	String name2;
+	public Object size;
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.coding.test.models&apos; to &apos;EnsayoDos/src/main/java/com.dojo.coding.ensayo&apos;&#x0D;&#x0A;- Original project: &apos;Test-I&apos;&#x0D;&#x0A;- Destination element: &apos;EnsayoDos/src/main/java/com.dojo.coding.ensayo&apos;&#x0D;&#x0A;- Original element: &apos;Test-I/src/main/java/com.example.coding.test.models&apos;" description="Copy package" destination="=EnsayoDos/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dojo.coding.ensayo" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.coding.test.models" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1691787936885" version="1.0"/>
+</session>

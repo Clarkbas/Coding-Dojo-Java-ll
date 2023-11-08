@@ -1,0 +1,61 @@
+Dependencias necesarias: 
+
+	<dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+        </dependency>
+
+
+Parametros necesarios para applicaton.properties:
+
+spring.mvc.view.prefix=/WEB-INF/
+
+Parametros necesarios para .jsp
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+
+
+
+
+
+
+
+
+@Controller
+public class ProjectController {
+
+	private final ProjectService pS;
+	private final UserValidator uV;
+
+	public ProjectController(ProjectService pS, UserValidator uV) {
+		this.pS = pS;
+		this.uV = uV;
+	}
+
+
+
+
+
+	@PostMapping("/register")
+	public String registerProcess(@Valid @ModelAttribute("userReg")User uReg,BindingResult result,RedirectAttributes rA) {
+		uV.validate(uReg, result);
+		if(result.hasErrors()) {
+			return"views/logReg.jsp";
+		}
+		else {
+			pS.registerUser(uReg);
+			rA.addFlashAttribute("success","<p class=\"alert alert-success\" role=\"alert\"> Registration Successful! You may now Log in. </p>");
+			return"redirect:/";
+		}
+	}

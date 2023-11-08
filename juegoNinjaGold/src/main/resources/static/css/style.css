@@ -1,0 +1,18 @@
+.gold {
+	border: 1px solid black;
+}
+
+.card {
+	margin: 3rem;
+
+}
+
+.card-body {
+	border: 1px solid;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>welcome</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<style>
+		body {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+  	margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+	}
+	
+	div {
+	  border: 1px solid black;
+	  padding: 20px;
+	}
+	ul{
+		list-style: none;
+	}
+	h3{
+		text-decoration: underline;
+	}
+	button{
+		background-color: rgb(118, 165, 175);
+		color: aliceblue;
+		box-shadow: 2px 2px rgb(0, 0, 0);
+	}
+	</style>
+<div>
+	<h3> Submitted Info</h3>
+
+
+	<ul>
+		<li >Name:</li> <li th:text="${firstname}">first name</li></br>
+		<li >Lastname:</li><li th:text="${lastname}">last name</li></br>
+		<li >Fecha:</li><li th:text="${Dob}">Dob</li></br>
+		<li >Correo:</li><li th:text="${email}">email</li></br>
+		<li >Localidad:</li><li th:text="${Location}">Location</li></br>
+		<li >Lenguage:</li><li th:text="${Language}">Language</li></br>
+		<li >Comentario:</li><li th:text="${comentario}">comentario</li></br>
+	</ul><br>
+	<button type="submit">Go back</button>
+</div>
+
+</body>
+</html>
